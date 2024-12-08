@@ -1,0 +1,95 @@
+﻿@page "/"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playfair and Kanit Example</title>
+    <!-- Import Playfair Display and Kanit Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <style>
+        /* Playfair Display for the title */
+        .playfair-display {
+            font-family: "Playfair Display", serif;
+            font-weight: 600;
+            font-style: normal;
+            color: #261342;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Kanit for the description */
+        .kanit-font {
+            font-family: "Kanit", sans-serif;
+            font-weight: 400;
+            color: #424242;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Styling for the search bar */
+        .search-bar-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .search-bar {
+            width: 50%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #261342;
+            border-radius: 5px;
+            outline: none;
+        }
+
+            .search-bar:focus {
+                border-color: #1E88E5;
+            }
+
+        /* Styling for the login and register buttons */
+        .auth-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 10px; /* Space between buttons */
+        }
+
+            .auth-buttons button {
+                padding: 10px 20px;
+                border-radius: 25px;
+                border: 1px solid #261342;
+                background-color: #fff;
+                color: #261342;
+                cursor: pointer;
+                font-size: 16px;
+            }
+
+                .auth-buttons button:hover {
+                    background-color: #261342;
+                    color: #fff;
+                }
+    </style>
+</head>
+<body>
+    <!-- Title with Playfair Display -->
+    <h1 class="playfair-display">Your Gateway to Career Opportunities.</h1>
+
+    <!-- Description with Kanit -->
+    <p class="kanit-font">Jobify simplifies job searching and hiring, connecting talent with opportunity effortlessly.</p>
+
+    <!-- Search Bar below the description -->
+    <div class="search-bar-container">
+        <input type="text" class="search-bar" placeholder="Search for jobs, internships, candidates, or companies...">
+    </div>
+
+    <!-- Login and Register Buttons at the top right -->
+    <div class="auth-buttons">
+        <button>Login</button>
+        <button>Register</button>
+    </div>
+</body>
+</html>
